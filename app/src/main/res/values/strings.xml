@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Cryptocurrency</string>
+    <string name="app_version">version 1.0</string>
+    <string name="list">Список</string>
+    <string name="details">Детали</string>
+    <string name="currency_converter">Конвертер валют</string>
+    <string name="cryptocurrency_name">Name: %s</string>
+    <string name="cryptocurrency_symbol">Symbol: %s</string>
+    <string name="cryptocurrency_id">ID: %d</string>
+    <string name="enter_value_cryptocurrency">Enter value cryptocurrency</string>
+</resources>

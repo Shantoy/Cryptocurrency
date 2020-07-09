@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cryptocurrency_list_graph"
+    app:startDestination="@id/cryptocurrencyListFragment">
+
+    <fragment
+        android:id="@+id/cryptocurrencyListFragment"
+        android:name="com.example.cryptocurrency.ui.cryptocurrencylist.CryptocurrencyListFragment"
+        android:label="@string/list"
+        tools:layout="@layout/fragment_cryptocurrency_list">
+
+        <action
+            android:id="@+id/action_to_cryptocurrencyDetailedFragment"
+            app:destination="@id/cryptocurrencyDetailedFragment"
+            app:enterAnim="@anim/nav_default_pop_enter_anim"
+            app:exitAnim="@anim/nav_default_pop_exit_anim">
+            <argument
+                android:name="cryptocurrency"
+                app:argType="com.example.cryptocurrency.domain.cryptocurrency.Cryptocurrency"
+                app:nullable="false" />
+        </action>
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/cryptocurrencyDetailedFragment"
+        android:name="com.example.cryptocurrency.ui.cryptocurrencydetailed.CryptocurrencyDetailedFragment"
+        android:label="@string/details"
+        tools:layout="@layout/fragment_cryptocurrency_detailed">
+        <argument
+            android:name="cryptocurrency"
+            app:argType="com.example.cryptocurrency.domain.cryptocurrency.Cryptocurrency"
+            app:nullable="false" />
+    </fragment>
+
+</navigation>
