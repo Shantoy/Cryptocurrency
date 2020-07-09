@@ -1,8 +1,10 @@
 package com.example.cryptocurrency.data.network
 
-data class FiatResponse(
-    val data: List<CryptocurrencyJson>,
-    val status: Status
+data class CryptocurrencyJson(
+    val id: Long,
+    val name: String,
+    val sign: String,
+    val symbol: String
 )
 
 data class Status(
@@ -13,9 +15,7 @@ data class Status(
     var credit_count: Float
 )
 
-data class CryptocurrencyJson(
-    val id: Long,
-    val name: String,
-    val sign: String,
-    val symbol: String
+data class FiatResponse(
+    val data: List<CryptocurrencyJson>,
+    val status: Status
 )
