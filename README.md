@@ -1,1 +1,3 @@
-# Cryptocurrency
+# Android приложение Cryptocurrency
+Приложение предназначено для просмотра актульных курсов криптовалют с возможностью разнонаправленной конвертации.
+Техническое задание: https://github.com/softh/TrainingTaskAndroid
